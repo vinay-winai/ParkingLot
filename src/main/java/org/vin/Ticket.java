@@ -1,6 +1,6 @@
 package org.vin;
 
-import static org.vin.ParkingLot.getParking;
+import static org.vin.ParkingLot.getSlot;
 
 public class Ticket {
     private int ticketID = 1;
@@ -11,6 +11,6 @@ public class Ticket {
         this.ticketID = ticketID++;
         this.vehicleID = vehicleID;
         this.entryTime = entryTime++;
-        this.assignedLot = getParking();
+        this.assignedLot = getSlot();
     }
 }
