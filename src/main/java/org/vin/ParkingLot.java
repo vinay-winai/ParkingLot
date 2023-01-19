@@ -1,19 +1,20 @@
 package org.vin;
 
 public class ParkingLot {
-     private static Boolean[] parkingLots = new Boolean[400];
+     private static final int maxSlots = 400; 
+     private static Boolean[] parkingLot = new Boolean[maxSlots];
 
-     static int getParking(){
-         for (int i=0;i <400; i++){
-             if (parkingLots[i]) {
-                 parkingLots[i] = false;
+     static int getSlot(){
+         for (int i=0;i<maxSlots; i++){
+             if (parkingLot[i]) {
+                 parkingLot[i] = false;
                  return i + 1;
              }
          }
          return -1;
      }
 
-     static void setParking(int slot){
-         parkingLots[slot-1] = true;
+     static void setSlot(int slot){
+         parkingLot[slot-1] = true;
      }
 }
