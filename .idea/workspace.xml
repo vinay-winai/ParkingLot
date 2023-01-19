@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc035095-4541-4542-aae2-36b33ad95559" name="Changes" comment="made changes to ticket class">
+    <list default="true" id="bc035095-4541-4542-aae2-36b33ad95559" name="Changes" comment="ParkingLot added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vin/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vin/ParkingLot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vin/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vin/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +24,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/vin/Main.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674120787225</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ParkingLot added">
+      <created>1674123072398</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674123072398</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +97,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added classes itr 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="added classes itr 1" />
+    <MESSAGE value="ParkingLot added" />
+    <option name="LAST_COMMIT_MESSAGE" value="ParkingLot added" />
   </component>
 </project>
