@@ -3,14 +3,17 @@ package org.vin;
 import static org.vin.ParkingLot.getSlot;
 
 public class Ticket {
-    private int ticketID = 1;
-    private int entryTime = 0;
-    private String vehicleID;
-    private int assignedLot;
+    static int ticketID = 1;
+    static int globalTime = 0;
+    int entryTime;
+    String vehicleID;
+    int assignedSlot;
+
     public Ticket(String vehicleID){
         this.ticketID = ticketID++;
+        this.entryTime = globalTime++;
         this.vehicleID = vehicleID;
-        this.entryTime = entryTime++;
-        this.assignedLot = getSlot();
+        this.assignedSlot= getSlot();
+
     }
 }

@@ -1,7 +1,7 @@
 package org.vin;
 
 public class Vehicle {
-    private String licPlate;
+    String licPlate;
     private VehicleType vehicleType;
 
     public Vehicle(String licPlate, VehicleType vehicleType) {
