@@ -1,10 +1,10 @@
 package org.vin;
 
 public class Ticket {
-    public int ticketID = 1;
-    public String vehicleID;
-    public int entryTime = 0;
-    public int assignedLot;
+    private int ticketID = 1;
+    private String vehicleID;
+    private int entryTime = 0;
+    private int assignedLot;
     public Ticket(){
         this.ticketID = ticketID++;
         this.vehicleID =
