@@ -13,7 +13,7 @@ public class ParkingLot {
          return -1;
      }
 
-     void setParking(int slot){
+     static void setParking(int slot){
          parkingLots[slot-1] = true;
      }
 }
