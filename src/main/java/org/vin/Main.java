@@ -6,6 +6,13 @@ import static org.vin.ParkingLot.setSlot;
 
 public class Main {
 
+    static int calculatePrice(Vehicle a,Ticket t,int endTime){
+        int res;
+        if (a.vehicleType == VehicleType.TWO_WHEELER)
+            res = (endTime-t.entryTime)*10;
+        else    res = (endTime-t.entryTime)*20;
+        return res;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("lic Plate");
@@ -22,12 +29,11 @@ public class Main {
             }
         }
         Vehicle a = new Vehicle(licPlate,vehicleType);
-        Ticket t1 = new Ticket(licPlate);
+        Ticket t = new Ticket(licPlate); // licPlate no for database purposes only
         System.out.println("endTime");
         int endTime = sc.nextInt();
-        int price;
-        price = endTime-t1.entryTime;
-        setSlot(t1.assignedSlot);
+        int price = calculatePrice(a,t,endTime);
+        setSlot(t.assignedSlot);
         System.out.println(price);
     }
 }

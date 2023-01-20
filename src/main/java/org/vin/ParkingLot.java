@@ -2,7 +2,7 @@ package org.vin;
 
 public class ParkingLot {
      private static final int maxSlots = 400; 
-     private static boolean[] parkingLot = new boolean[maxSlots];
+     private static final boolean[] parkingLot = new boolean[maxSlots];
 
      static int getSlot(){
          for (int i=0;i<maxSlots; i++){

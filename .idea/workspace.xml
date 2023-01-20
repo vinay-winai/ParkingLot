@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc035095-4541-4542-aae2-36b33ad95559" name="Changes" comment="ticket updated">
+    <list default="true" id="bc035095-4541-4542-aae2-36b33ad95559" name="Changes" comment="working proto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vin/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vin/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vin/ParkingLot.java" afterDir="false" />
@@ -117,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674128371754</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="working proto">
+      <created>1674146335061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674146335061</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,27 +142,7 @@
     <MESSAGE value="added classes itr 1" />
     <MESSAGE value="ParkingLot added" />
     <MESSAGE value="ticket updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="ticket updated" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/vin/ParkingLot.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/vin/ParkingLot.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/vin/ParkingLot.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="working proto" />
+    <option name="LAST_COMMIT_MESSAGE" value="working proto" />
   </component>
 </project>
