@@ -4,9 +4,15 @@ public class Vehicle {
     String licPlate;
     VehicleType vehicleType;
 
-    public Vehicle(String licPlate, VehicleType vehicleType) {
+    public Vehicle(String licPlate) {
         this.licPlate = licPlate;
-        this.vehicleType = vehicleType;
     }
 
+    public String getLicPlate() {
+        return licPlate;
+    }
+
+    public VehicleType getVehicleType() {
+        return vehicleType;
+    }
 }

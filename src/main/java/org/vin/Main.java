@@ -5,35 +5,28 @@ import java.util.Scanner;
 import static org.vin.ParkingLot.setSlot;
 
 public class Main {
-
-    static int calculatePrice(Vehicle a,Ticket t,int endTime){
-        int res;
-        if (a.vehicleType == VehicleType.TWO_WHEELER)
-            res = (endTime-t.entryTime)*10;
-        else    res = (endTime-t.entryTime)*20;
-        return res;
-    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("lic Plate");
-        String licPlate = sc.nextLine();
-        System.out.println("2 or 4");
-        int inp = sc.nextInt();
-        VehicleType vehicleType;
-        switch (inp) {
-            case 2 -> vehicleType = VehicleType.TWO_WHEELER;
-            case 4 -> vehicleType = VehicleType.FOUR_WHEELER;
-            default -> {
-                System.out.println("Invalid");
-                return;
+        ParkingLot lot=new ParkingLot();
+        int choice = 1;
+        while(choice==1) {
+            System.out.println("Enter the license plate number of the vehicle.");
+            String licPlate = sc.nextLine();
+            sc.nextLine();
+            System.out.println("Do you want to log entry ticket or exit ticket? Press 1 for entry or 2 for exit.");
+            int logvar = sc.nextInt();
+            Ticket tick = new Ticket(licPlate);
+            if (logvar == 1) {
+            Ticket entrytick = tick;
+                entrytick.entryticket();
+            } else if (logvar == 2) {
+                Ticket exittick = tick;
+                exittick.exitticket(licPlate);
             }
+            System.out.println("Press 0 to exit the program else press 1 to continue");
+            int inp = sc.nextInt();
+            if(inp == choice) continue;
+            else if (inp == 0) break;
         }
-        Vehicle a = new Vehicle(licPlate,vehicleType);
-        Ticket t = new Ticket(licPlate); // licPlate no for database purposes only
-        System.out.println("endTime");
-        int endTime = sc.nextInt();
-        int price = calculatePrice(a,t,endTime);
-        setSlot(t.assignedSlot);
-        System.out.println(price);
     }
 }
