@@ -1,0 +1,6 @@
+org\vin\Vehicle.class
+org\vin\DataBase.class
+org\vin\Ticket.class
+org\vin\Main.class
+org\vin\ParkingLot.class
+org\vin\VehicleType.class
