@@ -1,2 +1,0 @@
-# ParkingLot
-oop java practice
